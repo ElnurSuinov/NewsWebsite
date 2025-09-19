@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+<body>
+<h1>
+    Категории новостей:
+</h1>
+{% for c in categories %}
+{{ c }}
+<br>
+{% endfor %}
+<hr>
+<h1>
+    Новости:
+</h1>
+{% for n in news %}
+{{ n }}
+<br>
+{% endfor %}
+</body>
+</html>
