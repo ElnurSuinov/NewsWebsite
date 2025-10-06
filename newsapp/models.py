@@ -16,6 +16,7 @@ class News(models.Model):
     main_text = models.TextField()
     news_category = models.ForeignKey(NewsCategory, on_delete=models.CASCADE)
     added_date = models.DateTimeField(auto_now_add=True)
+    news_image = models.ImageField(upload_to="news/", blank=True, null=True)
 
     def __str__(self):
         return self.news_title
